@@ -23,7 +23,7 @@ public class curriculum_1_8 {
 		f = 0.0f;
 		d = 0.0d;
 		c = '\u0000';
-		str = "string";
+		str = "null";
 		boo = false;
 		
 //		初期化をしたそれぞれの変数に下記の値を代入してください
@@ -41,12 +41,12 @@ public class curriculum_1_8 {
 //		上記で作成した変数を必ず使用すること
 
 		System.out.print(b);
-		System.out.print(f+d);
-		System.out.print(c+str+boo);
-		System.out.print(b+s+i+l+f+d);
-		System.out.print(b*s*i*l);
-		System.out.print(d/s);
-		System.out.print(b-s);
+		System.out.print(f + d);
+		System.out.print(c + str + boo);
+		System.out.print(b + s + i + l + f + d);
+		System.out.print(b * s * i * l);
+		System.out.print(d / s);
+		System.out.print(b - s);
 		
 		
 //		次のプログラムを実行すると「ハローJAVA2023」という結果が表示されます。
@@ -54,7 +54,7 @@ public class curriculum_1_8 {
 
 		int num= 20;
 		int num1 = 23;
-		System.out.println("ハローJAVA"+(num+num1));
+		System.out.println("ハローJAVA"+(num + num1));
 		
 //		『』で囲われた人の情報を変数にして、formatの通りコンソールに出力してください
 //		ローカル変数に代入し○○に入れてください
@@ -72,17 +72,19 @@ public class curriculum_1_8 {
 		double height = 170.5;
 		double weight = 62.2;
 		String favoriteFood = "寿司";
-		System.out.println("初めまして"+name+"です");
-		System.out.println("年齢は"+age+"歳です");
-		System.out.println("身長は"+height+"cmです");
-		System.out.println("体重は"+weight+"です");
-		System.out.println("好きな食べ物は"+favoriteFood+"です");
+		System.out.println("初めまして" + name + "です");
+		System.out.println("年齢は" + age + "歳です");
+		System.out.println("身長は" + height + "cmです");
+		System.out.println("体重は" + weight + "です");
+		System.out.println("好きな食べ物は" + favoriteFood + "です");
 		
 //		6で作成した自己紹介に続いてBMIが出力されるようにしてください
 //		「BMIは○○です」
 //		ただし計算は数値を直書きせず、全て変数を使ってすること
-
-		System.out.println("BMIは"+weight/(height*height)+"です");
+		
+		height = 1.705;
+		double BMI = weight / (height * height);
+		System.out.println("BMIは" + String.format("%.1f",BMI) + "です");
 		
 //		6で宣言した変数に再代入し下記の通りコンソールに出力してください
 //		　初めまして鈴木一郎です
@@ -105,18 +107,26 @@ public class curriculum_1_8 {
 //		　体重は128.4kgです
 //		　好きな食べ物はオムライスです
 //		　BMIは11.31です
-
+		
 		age = age+age;
 		height = height+height;
 		weight = weight+weight;
+		System.out.println("初めまして" + name + "です");
+		System.out.println("年齢は" + age + "歳です");
+		System.out.println("身長は" + height + "cmです");
+		System.out.println("体重は" + weight + "です");
+		System.out.println("好きな食べ物は" + favoriteFood + "です");
 		
 
 		//}8で使用した年齢が25歳以上ならtrueが出力されるようにしてください。ただしif文は使いません
-		String ageResult = "string";
+		String ageResult = "null";
+		age = age / 2;
 		ageResult = age >= 25? "true" : "false";
 		System.out.println(ageResult);
 
 		//8で使用した【年齢・身長・体重】を文字列型に型変換し繋げて出力してください
+		height = height / 2;
+		weight = weight / 2;
 		String age2 = String.valueOf(age);
 		String height2 = String.valueOf(height);
 		String weight2 = String.valueOf(weight);
