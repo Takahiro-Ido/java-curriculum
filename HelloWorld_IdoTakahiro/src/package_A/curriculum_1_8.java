@@ -23,7 +23,7 @@ public class curriculum_1_8 {
 		f = 0.0f;
 		d = 0.0d;
 		c = '\u0000';
-		str = "null";
+		str = null;
 		boo = false;
 		
 //		初期化をしたそれぞれの変数に下記の値を代入してください
@@ -40,10 +40,10 @@ public class curriculum_1_8 {
 //		下記の通りにコンソール出力されるようにしてください
 //		上記で作成した変数を必ず使用すること
 
-		System.out.print(b);
-		System.out.print(f + d);
+		System.out.print(b + s + i + l);	
+		System.out.print( String.format("%.0f", f + d));
 		System.out.print(c + str + boo);
-		System.out.print(b + s + i + l + f + d);
+		System.out.print( String.format("%.0f",(b + s + i + l + f + d)));
 		System.out.print(b * s * i * l);
 		System.out.print(d / s);
 		System.out.print(b - s);
@@ -75,7 +75,7 @@ public class curriculum_1_8 {
 		System.out.println("初めまして" + name + "です");
 		System.out.println("年齢は" + age + "歳です");
 		System.out.println("身長は" + height + "cmです");
-		System.out.println("体重は" + weight + "です");
+		System.out.println("体重は" + weight + "kgです");
 		System.out.println("好きな食べ物は" + favoriteFood + "です");
 		
 //		6で作成した自己紹介に続いてBMIが出力されるようにしてください
@@ -98,7 +98,15 @@ public class curriculum_1_8 {
 		age = 24;
 		height = 168.5;
 		weight = 64.2;
-		favoriteFood = "オムライス";
+		favoriteFood = "オムライス"; 
+		System.out.println("初めまして" + name + "です");
+		System.out.println("年齢は" + age + "歳です");
+		System.out.println("身長は" + height + "cmです");
+		System.out.println("体重は" + weight + "kgです");
+		System.out.println("好きな食べ物は" + favoriteFood + "です");
+		height = 1.685;
+		BMI = weight / (height * height);
+		System.out.println("BMIは" + String.format("%.1f",BMI) + "です");
 		
 //		8で使用した変数【年齢・身長・体重】の数値を和算で自己代入し、下記の通りコンソールに出力してください
 //		　初めまして鈴木一郎です
@@ -109,23 +117,28 @@ public class curriculum_1_8 {
 //		　BMIは11.31です
 		
 		age = age+age;
+		height = 168.5;
 		height = height+height;
 		weight = weight+weight;
 		System.out.println("初めまして" + name + "です");
 		System.out.println("年齢は" + age + "歳です");
 		System.out.println("身長は" + height + "cmです");
-		System.out.println("体重は" + weight + "です");
+		System.out.println("体重は" + weight + "kgです");
 		System.out.println("好きな食べ物は" + favoriteFood + "です");
+		height = height / 100;
+		BMI = weight / (height * height);
+		System.out.println("BMIは" + String.format("%.1f",BMI) + "です");
 		
 
 		//}8で使用した年齢が25歳以上ならtrueが出力されるようにしてください。ただしif文は使いません
-		String ageResult = "null";
+		String ageResult = null;
 		age = age / 2;
 		ageResult = age >= 25? "true" : "false";
 		System.out.println(ageResult);
 
 		//8で使用した【年齢・身長・体重】を文字列型に型変換し繋げて出力してください
-		height = height / 2;
+		
+		height = height *100 / 2;
 		weight = weight / 2;
 		String age2 = String.valueOf(age);
 		String height2 = String.valueOf(height);
