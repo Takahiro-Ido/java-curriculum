@@ -127,7 +127,7 @@ public class curriculum_1_8 {
 		System.out.println("好きな食べ物は" + favoriteFood + "です");
 		height = height / 100;
 		BMI = weight / (height * height);
-		System.out.println("BMIは" + String.format("%.1f",BMI) + "です");
+		System.out.println("BMIは" + String.format("%.2f",BMI) + "です");
 		
 
 		//}8で使用した年齢が25歳以上ならtrueが出力されるようにしてください。ただしif文は使いません
