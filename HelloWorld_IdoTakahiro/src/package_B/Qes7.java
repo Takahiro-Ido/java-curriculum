@@ -60,10 +60,7 @@ public class Qes7 {
 		System.out.print("社会の平均点は"+String.format("%.1f", socialstudiesAverage)+"点です。");
 		System.out.print("英語の平均点は"+String.format("%.1f", englishAverage)+"点です。");
 
-		
-		// TODO 自動生成されたメソッド・スタブ
-		
-		
+		scanner.close();
 
 	}
 }

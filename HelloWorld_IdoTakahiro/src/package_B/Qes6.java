@@ -32,7 +32,7 @@ public class Qes6 {
         	
         	default:
         		System.out.println("『"+searchWordsAry[i]+"』は指定の商品ではありません。");
-        	
+        	scanner.close();
         	}
         }
 
