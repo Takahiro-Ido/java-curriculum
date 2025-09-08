@@ -11,13 +11,11 @@ public class Curriculum_New_1_18 {
 
 	// Q1：引数に文字列型と整数型をいれてコンソールに「Hello JavaSE 11」と出力するメソッドを作成してください。
 
-	private static void Hello() {
-		String h = "Hello JavaSE";
+	public static void Hello(String h) {
 		System.out.println(h);
 	}
 
-	private static void Hello2() {
-		int number = 11;
+	private static void Hello2(int number) {
 		System.out.println(number);
 
 	}
@@ -87,8 +85,8 @@ public class Curriculum_New_1_18 {
 
 	public static void main(String[] args) {
 		// TODO 自動生成されたメソッド・スタブ
-		Hello();
-		Hello2();
+		Hello("Hello"+"JavaSE");
+		Hello2(11);
 		Number1(2, 5);
 		Number1(2.5, 5.3);
 		array(array1);
