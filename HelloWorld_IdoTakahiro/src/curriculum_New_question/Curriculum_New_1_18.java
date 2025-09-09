@@ -11,13 +11,8 @@ public class Curriculum_New_1_18 {
 
 	// Q1：引数に文字列型と整数型をいれてコンソールに「Hello JavaSE 11」と出力するメソッドを作成してください。
 
-	public static void Hello(String h) {
-		System.out.println(h);
-	}
-
-	private static void Hello2(int number) {
-		System.out.println(number);
-
+	public static void Hello(String h ,int number) {
+		System.out.println(h+number);
 	}
 
 	// Q2：引数に整数を渡すと渡した値同士を乗算しコンソールに出力するメソッドを作成してください
@@ -85,8 +80,7 @@ public class Curriculum_New_1_18 {
 
 	public static void main(String[] args) {
 		// TODO 自動生成されたメソッド・スタブ
-		Hello("Hello"+"JavaSE");
-		Hello2(11);
+		Hello("Hello"+" "+"JavaSE",11);
 		Number1(2, 5);
 		Number1(2.5, 5.3);
 		array(array1);
