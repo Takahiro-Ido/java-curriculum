@@ -3,9 +3,9 @@ package package1_22;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-import package1_22_2.sub;
+import package1_22_2.Sub;
 
-public class main {
+public class Main {
 
 	public static void main(String[] args) {
 		//		下記がコンソールに出力されるように作成してください
@@ -14,7 +14,7 @@ public class main {
 		//		この寿司はうまい
 		//		寿司は和食です
 
-		sub sub = new sub();
+		Sub sub = new Sub();
 		System.out.println(sub.greeting);
 		System.out.println(sub.sushi1);
 		System.out.println(sub.sushi2);
