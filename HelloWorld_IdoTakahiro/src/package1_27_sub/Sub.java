@@ -26,7 +26,7 @@ public class Sub {
 
 		public void scanner() {
 			Scanner scanner = new Scanner(System.in);
-			input = scanner.next();
+			input = scanner.nextLine();
 			scanner.close();
 
 		}
