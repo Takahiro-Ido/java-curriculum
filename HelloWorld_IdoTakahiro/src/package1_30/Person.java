@@ -3,7 +3,6 @@ package package1_30;
 class Person {
 	// インスタンスフィールドを定義
 
-	private String person1;
 	private String name;
 	private int age;
 	private double height;
@@ -11,13 +10,6 @@ class Person {
 	private double BMI;
 	static int counter = 0;
 
-	public String getPerson1() {
-		return person1;
-	}
-
-	public void setPerson1(String person1) {
-		this.person1 = person1;
-	}
 
 	public String getName() {
 		return name;
@@ -69,16 +61,16 @@ class Person {
 
 	}
 
-	public double BMI() {
-		double BMI = weight / (height * height);
-		return BMI;
+	public double bmi() {
+		double bmi = weight / (height * height);
+		return bmi;
 
 	}
 
 	public void print() {
 		System.out.println("名前は" + this.getName() + "です。");
 		System.out.println("年は" + this.getAge() + "です。");
-		System.out.println("BMIは" + this.BMI() + "です。");
+		System.out.println("BMIは" + this.bmi() + "です。");
 
 	}
 
